@@ -1,0 +1,3 @@
+If user leaves server, sv broadcasts a registermessage with key ''
+    upon receiving it, logged in users delete that user from their logbooks
+

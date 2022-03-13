@@ -1,0 +1,19 @@
+syntax="proto3";
+
+service chat{
+	rpc TextMessage (TextMessageRequest) returns (ServerAcknowledge){}
+	rpc ChannelJoin (ChannelJoinRequest) returns (ServerAcknowledge){}
+}
+
+message TextMessageRequest {
+	string content = 1;
+	string channel = 2;
+}
+
+message ChannelJoinRequest {
+	string channel =1;
+}
+
+message ServerAcknowledge {
+	bool ack =1;
+}

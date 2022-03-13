@@ -1,0 +1,26 @@
+
+First send 2 bytes with the message size, after send the message.
+Subscribe:
+"command":"sub",
+"topic":<topic_goes_here>
+
+Publish:
+"command":"pub",
+"topic":<topic_goes_here>
+"content":<content_to_be_published>
+
+GetList:
+"command": "list"
+
+ListResponse:
+"command":"list_rep"
+"list":list[]
+
+CancelSub:
+"command": "cancel"
+"topic":<topic_goes_here>
+
+Init:
+0 - json
+1-xml
+2- pickle
